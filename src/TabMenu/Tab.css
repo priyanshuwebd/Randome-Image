@@ -1,0 +1,150 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main heading - centered */
+.main-heading {
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center; /* Centers the heading */
+    margin-top: 20px;
+}
+
+/* Tabs container */
+.menu-tabs {
+    margin-top: 30px;
+}
+
+/* Menu tab buttons - centered and styled */
+.menu-tab {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    flex-wrap: wrap; /* Allows buttons to wrap if needed */
+}
+
+.menu-tab button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-tab button:hover {
+    background-color: #e0a800;
+}
+
+/* Menu items container */
+.menu-item {
+    margin-top: 50px;
+}
+
+/* Set up the grid to display 3 items per row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item1 {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    flex: 0 0 32%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #ffc107;
+}
+
+/* Image styling */
+.img-div {
+    text-align: center;
+    padding: 10px;
+}
+
+.img-div img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    max-width: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Item description styling */
+.main-title h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.main-title p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.menu-price-book {
+    margin-top: 20px;
+}
+
+.price-book-divide h2 {
+    font-size: 1.3rem;
+    color: #28a745;
+}
+
+.price-book-divide button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.price-book-divide button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .item1 {
+        flex: 0 0 48%;
+    }
+
+    .img-div img {
+        max-height: 80px;
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .item1 {
+        flex: 0 0 100%;
+    }
+
+    .price-book-divide h2 {
+        font-size: 1.1rem;
+    }
+}
